@@ -15,7 +15,8 @@ The source data contains signal measurements based on movements performed by sub
 Originally, the data set contains 561 columns/fields of signals and computations to record an observation. 
 These data was read from *X_test.txt* and *X_train.txt* files. 
 
-For the purpose processing of the tidy data set, only signal variables with mean (mean()) and standard deviation (std()) measurements have been extracted and renamed below to be more readable (please see Table 1 below). 
+For the purpose of processing the tidy data set, only signal variables with mean (mean()) and standard deviation (std()) measurements have been extracted and renamed below to be more readable (please see Table 1 below). 
+
 The complete list of feature labels have been read from *features.txt*.
 
 For the description of each signal measurement, this can be referred to the *features_info.txt* file of the dataset, as quoted below:
@@ -135,14 +136,14 @@ From **signaldata**, the next step was done to produce another data set which sh
 Here, the average of each signal variable was to be computed per activity and subject involved. 
 I chose to reshape the data by retaining the subject and activity fields, and capturing the signal variable names as the key and their values in another column. 
 
-### Table 2. Sample Reshaped data from signaldata
+### Table 2. Sample Reshaped data structure from signaldata
 
 | activity | subject | signalvariable | value |
 |----------|---------|----------------|-------|
 
 From this, I summarized the average value according to the grouping (activity, subject, signalvariable) and computed the averagevalue via the mean(value) aggregation. This is now assigned to the **average_signaldata** R object, and is written as an output file for the resulting tidy data set. 
 
-### Table 3. Sample Reshaped data, with averages computed, assigned to **average_signaldata**
+### Table 3. Sample Reshaped data structure, with averages computed, assigned to **average_signaldata**
 
 | activity | subject | signalvariable | averagevalue |
 |----------|---------|----------------|--------------|
