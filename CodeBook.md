@@ -5,9 +5,8 @@
 The tidied data is based from the UCI HAR Dataset. The dataset contains information on the measured acceleration 
 signals from subjects performing specific activities which are then captured by the smartphone's sensors.
 Further information as provided is available here: 
-	<http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
-The dataset was downloaded using below provided link: 
-	<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+<http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
+The dataset was downloaded using below provided link:<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 The data set was divided into two sets: training and testing. 
 
 
